@@ -147,6 +147,7 @@ def save_model(
     example_no_conversion=True,
     model_config=None,
     streamable: Optional[bool] = None,
+    resources=None,
 ):
     """
     Save a LangChain model to a path on the local file system.
@@ -409,6 +410,7 @@ def save_model(
 def log_model(
     lc_model,
     artifact_path,
+    resources=None,
     conda_env=None,
     code_paths=None,
     registered_model_name=None,
@@ -568,6 +570,7 @@ def log_model(
         run_id=run_id,
         model_config=model_config,
         streamable=streamable,
+        resources=resources,
     )
 
 
